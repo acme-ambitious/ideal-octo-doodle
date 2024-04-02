@@ -1,0 +1,14 @@
+name: wr
+on:
+  workflow_run:
+    workflows: [ "pr" ]
+    types:
+      - completed
+
+jobs:
+  build:
+    name: something
+    runs-on: ubuntu-latest
+    steps:
+      - runs: |
+          echo "done"
