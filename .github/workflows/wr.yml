@@ -10,5 +10,5 @@ jobs:
     name: something
     runs-on: ubuntu-latest
     steps:
-      - runs: |
+      - run: |
           echo "done"
